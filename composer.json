@@ -1,0 +1,22 @@
+{
+    "name": "aiti/module-productresponsibleuserapi",
+    "description": "Product Responsible User Api",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Lukas Cesal",
+            "email": "lukas.cesal@aiti.cz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Aiti\\ProductResponsibleUserApi\\": ""
+        }
+    }
+}
