@@ -5,23 +5,23 @@ namespace Aiti\ProductResponsibleUserApi\Api;
 
 use Magento\Framework\Api\SearchCriteriaInterface;
 
-interface UserRepositoryInterface
+interface ProductResponsibleUserRepositoryInterface
 {
 
     /**
      * Save User
-     * @param \Aiti\ProductResponsibleUserApi\Api\Data\UserInterface $user
-     * @return \Aiti\ProductResponsibleUserApi\Api\Data\UserInterface
+     * @param \Aiti\ProductResponsibleUserApi\Api\Data\ProductResponsibleUserInterface $user
+     * @return \Aiti\ProductResponsibleUserApi\Api\Data\ProductResponsibleUserInterface
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     public function save(
-        \Aiti\ProductResponsibleUserApi\Api\Data\UserInterface $user
+        \Aiti\ProductResponsibleUserApi\Api\Data\ProductResponsibleUserInterface $user
     );
 
     /**
      * Retrieve User
      * @param string $userId
-     * @return \Aiti\ProductResponsibleUserApi\Api\Data\UserInterface
+     * @return \Aiti\ProductResponsibleUserApi\Api\Data\ProductResponsibleUserInterface
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     public function get($userId);
@@ -38,12 +38,12 @@ interface UserRepositoryInterface
 
     /**
      * Delete User
-     * @param \Aiti\ProductResponsibleUserApi\Api\Data\UserInterface $user
+     * @param \Aiti\ProductResponsibleUserApi\Api\Data\ProductResponsibleUserInterface $user
      * @return bool true on success
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     public function delete(
-        \Aiti\ProductResponsibleUserApi\Api\Data\UserInterface $user
+        \Aiti\ProductResponsibleUserApi\Api\Data\ProductResponsibleUserInterface $user
     );
 
     /**
