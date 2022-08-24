@@ -11,7 +11,7 @@ interface ProductResponsibleUserInterface
     const USER_ID = 'user_id';
     const FIRST_NAME = 'first_name';
     const LAST_NAME = 'last_name';
-    const DEPARTMENT_ID = 'department_id';
+    const DEPARTMENT = 'department';
     const CREATED_AT = 'created_at';
 
     /**
@@ -54,17 +54,17 @@ interface ProductResponsibleUserInterface
     public function setLastName(string $lastName) : ProductResponsibleUser;
 
     /**
-     * Get department_id
-     * @return int|null
+     * Get department
+     * @return string|null
      */
-    public function getDepartmentId() : ?int;
+    public function getDepartment() : ?string;
 
     /**
-     * Set department_id
-     * @param int|null $departmentId
+     * Set department
+     * @param string|null $department
      * @return ProductResponsibleUser
      */
-    public function setDepartmentId(?int $departmentId) : ProductResponsibleUser;
+    public function setDepartment(?string $department) : ProductResponsibleUser;
 
     /**
      * Get created_at
